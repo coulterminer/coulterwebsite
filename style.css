@@ -1,0 +1,245 @@
+@keyframes slide_b {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes background_slide {
+	0% {
+		background-position: right top;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: right top;
+		background-size: 150%;
+	}
+}
+
+html{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/anders-jilden.jpg") no-repeat;
+    animation: background_slide 4s ease 0s 1 normal forwards;
+}
+
+.topbar{
+    text-decoration: none;
+    text-align: center;
+    height: 105%;
+    margin-top: 0%;
+}
+
+.project{
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  height: 105%;
+  margin-top: 0%;
+}
+
+.items{
+    background-color:rgba(0, 0, 0, 0.26);
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 30px;
+}
+
+.tb{
+    text-decoration: none;
+    color: white;
+    font-size: 45;
+    font-family: 'Karla', sans-serif;
+    padding: 10px;
+}
+
+
+.tb:hover{
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.crypto{
+    font-family: 'Karla', sans-serif;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #111;
+    margin-top: 1%;
+    padding-top: 1%;
+    height: min-content;
+    width: max-content;
+    color: white;
+    opacity: 0;
+    animation: slide_b 1.5s ease 3s 1 normal forwards;
+}
+
+code{
+    font-family: Consolas,"courier new";
+    color: rgb(255, 181, 10);
+    background-color: #333;
+    border-radius: 10px;
+    margin-left: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 5px;
+    font-size: 105%;
+    float: right;
+  }
+
+.content{
+    margin: 0 auto;
+    width: 30%;
+    height: 50%;
+}
+
+.t_text{
+  color: white;
+  font-size: 50px;
+  font-family: 'Karla', sans-serif;
+
+  margin-top: 13%;
+  margin-bottom: 1%;
+  opacity: 0;
+  animation: slide_b 1.5s ease 2s 1 normal forwards;
+}
+
+.intro_box{
+    margin: auto 0;
+    width: 10%;
+    padding: 2%;
+    font-size: larger;
+    font-family: 'Karla', sans-serif;
+    background: rgba(255, 255, 255);
+}
+
+.certs{
+    background-color: white;
+    padding-top: 1%;
+    width: 100%;
+    font-size: 45px;;
+    height: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titleP{
+    text-decoration: none;
+    color: white;
+    font-size: 45;
+    font-family: 'Karla', sans-serif;
+    padding: 10px;
+}
+
+.projects{
+    margin-top: 3%;
+}
+
+.sort_projects{
+}
+
+.project_box{
+    width: 20%;
+    padding: 1px;;
+    font-size: large;
+    border: #111 1px solid;
+}
+
+.project_menu{
+    margin: auto;
+    padding: 3px;
+    width: 80%;
+    height: 40%;
+    border: #111 1px solid;
+}
+
+svg:hover{
+    fill:rgba(0, 0, 0, 0.26);
+}
+
+svg-sel{
+    fill:rgba(0, 0, 0, 0.26);
+}
+
+button{
+    border: 0px solid;
+    background-color: white;
+}
+
+.crypto_item{
+    margin-bottom: 10px;
+}
+
+.darkmode{
+    padding-top: 8px;
+    float:right;
+    display: flex;
+}
+
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #530079;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #530079;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
