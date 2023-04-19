@@ -1,16 +1,52 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/Projects/projects.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tilt+Neon">
         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
 
-        <title>Hello World!</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="github-embed.min.js"></script>
+
+        <title>AWS Global Network | Projects</title>
     </head>
 
     <body>
-        <script src="/script.js"></script>
+        <div class="tbar">
+            <a href="/Projects/"><img src="https://img.icons8.com/ios-glyphs/30/null/circled-left-2.png"/></a>
+        </div>
+        <h1>My <b>AWS</b> Global Network</h1>
+        <br>
+
+        <div class="content">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;For a while I have been obsessed with the idea of networks, the ability to run commands on a global scale intrested me. You could build a global website instantly, you could use it for numerical processing. The simple idea of connecting two computers together has changed the world. The idea has always intrested me, it started with my ongoing intrest in automation and developer operations. At first, I was thinking about getting an arduino or Raspberry Pi that started aws instances when you pressed on it. The idea progressed into a global network that I started working on in January of 2023. It has taken a lot longer then I expected. With a ton of changes and rewrites due to limitations of python and socket programming. I did not expect it to take as long as it did, but im glad that the project is coming together.</p>
+            <br>
+            <h2>Server <b>Security</b></h2>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;The backend of the network is this central server. When the server starts up, it generates a hash per each authorized client. The peer generates a hash in order to get access to the server. The hash contains information that only the server could know. It uses the AWS Private IP along with the public then its logging file contents to generate the hash. If the client is authorized to be on the network, it's hash will match and be approved onto the network.</p>
+            <br>
+            <h2>Network Syncing and <b>Authority</b></h2>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;The network model mirrors some aspects of a blockchain. Where the ledger is the logs of the network. Every 10 blocks, a validation request is sent out from the central server. All files are encrypted and sent to the server. The server matches it with its own ledger and others. If the server is behind on a majority, it will automatically sync. If a client side anomoly is discovered, the network pauses and an election starts. The server will brodcast all the anomoly files, along with its own log and a random peer scored highly in reliability. All the clients vote for which one their log file corresponds with. Then the election ends, the winning team gets network authority. The more a node wins, the more it is believed in an anomoly situation. It also gets more votes depending on other peers and their authority scores.</p>
+            <br>
+            <button type="button" class="collapsible">Server.py</button>
+            <div class="col_content">
+                <script src="https://gist.github.com/coulterminer/cb48763f2c9fab6a117875f15fb62526.js"></script>
+            </div>
+
+            <br>
+
+            <button type="button" class="collapsible">Client.py</button>
+            <div class="col_content">
+                <script src="https://gist.github.com/coulterminer/d88efe7c9b54365e9dbe9d6e2bfd708c.js"></script>"></script>
+            </div>
+            <script src="/Projects/projects.js"></script>
+        </div>
     </body>
 </html>

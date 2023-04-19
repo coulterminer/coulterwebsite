@@ -6,7 +6,7 @@
 
 	100% {
 		opacity: 1;
-		transform: translateY(0);
+		transform: translateY(0px);
 	}
 }
 
@@ -24,7 +24,8 @@
 
 html{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/anders-jilden.jpg") no-repeat;
-    animation: background_slide 4s ease 0s 1 normal forwards;
+    background-position-y: center;
+    background-size: cover;
 }
 
 .topbar{
@@ -46,14 +47,16 @@ html{
 .items{
     background-color:rgba(0, 0, 0, 0.26);
     margin: 0 auto;
-    width: 40%;
+    min-width: min-content;
+    max-width: max-content;
+    padding: 10px;
     border-radius: 30px;
 }
 
 .tb{
     text-decoration: none;
     color: white;
-    font-size: 45;
+    font-size: 30px;
     font-family: 'Karla', sans-serif;
     padding: 10px;
 }
@@ -70,7 +73,7 @@ html{
     border-radius: 10px;
     background-color: #111;
     margin-top: 1%;
-    padding-top: 1%;
+    padding-top: 2%;
     height: min-content;
     width: max-content;
     color: white;
@@ -89,7 +92,11 @@ code{
     margin-bottom: 5px;
     font-size: 105%;
     float: right;
-  }
+}
+
+code:hover{
+  background-color: #555;
+}
 
 .content{
     margin: 0 auto;
@@ -101,8 +108,6 @@ code{
   color: white;
   font-size: 50px;
   font-family: 'Karla', sans-serif;
-
-  margin-top: 13%;
   margin-bottom: 1%;
   opacity: 0;
   animation: slide_b 1.5s ease 2s 1 normal forwards;
@@ -174,15 +179,12 @@ button{
     margin-bottom: 10px;
 }
 
+
 .darkmode{
     padding-top: 8px;
     float:right;
     display: flex;
 }
-
-
-
-
 
 .switch {
   position: relative;
@@ -242,4 +244,31 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.contact{
+  margin-top: 10%;
+}
+
+.contact>form{
+  color: white;
+  margin: auto;
+  background-color: #111;
+  width: 30%;
+  padding: 50;
+  border-radius: 10px;
+  border: black 1px solid;
+}
+
+.contact>form>select{
+  float: right;
+}
+
+.contact>form>label{
+  float: left;
+}
+
+.contact>h1{
+  font-family: "Karla" "sans-serif";
+  color: white;
 }

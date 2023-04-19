@@ -13,16 +13,16 @@
     <body>
         <div id="#home" class="project">
             <div class="items">
-                <a class="tb" href="">Home</a>
-                <a class="tb" href="">Achievements</a>
-                <a class="tb" href="">Contact</a>
+                <a class="tb" href="/">Home</a>
+                <a class="tb" href="">Projects</a>
+                <a class="tb" href="/contact/">Contact</a>
             </div>
 
         </div>
 
 
         <div class="certs" id="#certs">
-            <h class="title">Projects and Achievements</h>
+            <h class="title">Projects</h>
             <br>
             <div class="projects">
                 <div class="sort_projects">
@@ -35,11 +35,11 @@
                 </div>
                 
                 <div class="project_menu">
-                    <div class="project_box" id="pb_1">
+                    <div class="project_box" id="pb_1" onclick="window.location.href = '/Projects/AWS-Global-Network'">
                         <h id="pb_1_h">AWS Global Network</h>
                         <p id="pb_1_p" style="font-size:x-small; ">Languages: Python</p>
                     </div>
-                    <div class="project_box" id="pb_2">
+                    <div class="project_box" id="pb_2" onclick="window.location.href = '/Projects/AWS-Boto3'">
                         <h id="pb_2_h">AWS Boto3 Library</h>
                         <p id="pb_2_p" style="font-size:x-small; ">Languages: Python</p>
                     </div>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

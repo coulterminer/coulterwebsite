@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tilt+Neon">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+        <title>Hello World!</title>
+    </head>
+
+    <body>
+        <div id="#home" class="project">
+            <div class="items">
+                <a class="tb" href="/">Home</a>
+                <a class="tb" href="/Projects/">Projects</a>
+                <a class="tb" href="">Contact</a>
+            </div>
+
+            <div class="contact">
+                <h1>What is on your mind?</h1>
+                <form>
+                    <label>Ticket Type: </label><select name="ticketType" id="ticket_type">
+                        <option value="website_related">Website/Code Bugs</option>
+                        <option value="job_related">Job Inquery</option>
+                    </select>
+                    <br>
+                    <label id="job_type_text">Job Type: </label><select name="ticketType" id="job_type">
+                        <option value="sel"></option>
+                        <option value="website">Website</option>
+                        <option value="python">Python</option>
+                    </select>
+                    <br>
+                    <label id="web_type_text">Website: </label><select name="web_type" id="web_type">
+                        <option value="fullstack">Fullstack</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
