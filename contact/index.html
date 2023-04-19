@@ -20,7 +20,7 @@
 
             <div class="contact">
                 <h1>What is on your mind?</h1>
-                <form>
+                <form onsubmit="return false">
                     <label>Ticket Type: </label><select name="ticketType" id="ticket_type">
                         <option value="website_related">Website/Code Bugs</option>
                         <option value="job_related">Job Inquery</option>
@@ -33,10 +33,16 @@
                     </select>
                     <br>
                     <label id="web_type_text">Website: </label><select name="web_type" id="web_type">
+                        <option value="sel"></option>
                         <option value="fullstack">Fullstack</option>
                         <option value="frontend">Frontend</option>
                         <option value="backend">Backend</option>
                     </select>
+                    <br>
+                    <input id="web_details" type="text" value="">
+                    <input id="python_details" type="text" value=""
+                    <br>
+                    <button id="submit" onclick="submit_form()">Submit</button>
                 </form>
             </div>
         </div>
