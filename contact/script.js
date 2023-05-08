@@ -39,6 +39,7 @@ job_type.onchange = function(){
         j_type = "";
         web_type.style.display = "none";
         web_type_text.style.display = "none";
+        python_details.style.display = "none;"
     }
 }
 

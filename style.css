@@ -264,10 +264,6 @@ input:checked + .slider:before {
   float: right;
 }
 
-.contact>form>button, .contact>form>input{
-  float: right;
-}
-
 .contact>form>label{
   float: left;
 }

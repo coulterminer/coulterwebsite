@@ -68,6 +68,8 @@ const title_animation_text = {
     12: "PCAP",
     13: "Server Management and Hosting",
     14: "CyberSecurity",
+    15: "Java Experience",
+    16: "Solidity and GETH",
 };
 
 function animate() {
