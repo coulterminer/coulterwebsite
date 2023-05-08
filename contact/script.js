@@ -22,6 +22,11 @@ ticket_type.onchange = function(){
         job_type.style.display = "none";
         job_type_text.style.display = "none";
         t_type = "bug";
+        j_type = "";
+        web_type.style.display = "none";
+        web_type_text.style.display = "none";
+        python_details.style.display = "none";
+        web_details.style.display = "none";
     }
 }
 
@@ -29,10 +34,11 @@ job_type.onchange = function(){
     if (job_type.value == "website") {
         web_type.style.display = "block";
         web_type_text.style.display = "block";
+        python_details.style.display = "none";
         j_type = "website";
     } else if (job_type.value == "python"){
         j_type = "python";
-        python_details.style.display = "block;"
+        python_details.style.display = "block";
         web_type.style.display = "none";
         web_type_text.style.display = "none";
     } else {
